@@ -1,4 +1,4 @@
-import { createElement, createFragment } from '../utility/createElement'
+import { createElement, createFragment } from '../utility/jsx'
 
 /** @jsx createElement */
 /*** @jsxFrag createFragment */
