@@ -12,7 +12,7 @@ import { createElement, createFragment } from '/createElement'
           <p>Hello</p>
         </>
         <ul>
-          {[1, 2, 3].map(item => (
+          {[1, 2, 3, 4].map(item => (
             <li>{item}</li>
           ))}
         </ul>
