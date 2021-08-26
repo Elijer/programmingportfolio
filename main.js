@@ -1,11 +1,7 @@
-import { createElement } from '/createElement'
+import { createElement, createFragment } from '/createElement'
 
 /** @jsx createElement */
 /*** @jsxFrag createFragment */
-  
-  const createFragment = (props, ...children) => {
-    return children;
-  };
   
   const UsingFragment = () => (
     <div>

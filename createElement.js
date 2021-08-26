@@ -21,3 +21,7 @@ const appendChild = (parent, child) => {
     else
       parent.appendChild(child.nodeType ? child : document.createTextNode(child));
   };
+
+export const createFragment = (props, ...children) => {
+    return children;
+  };
