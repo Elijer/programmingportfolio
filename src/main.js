@@ -1,24 +1,11 @@
-import { createElement, createFragment } from '/createElement'
+import { createElement, createFragment } from '/utility/createElement'
+import { UsingFragment } from '/components/usingFragment'
 
 /** @jsx createElement */
 /*** @jsxFrag createFragment */
-  
-  const UsingFragment = () => (
-    <div>
-      <p>This is regular paragraph</p>
-      <div>
-        <p>This is a paragraph in a fragment</p>
-        <>
-          <p>Hello</p>
-        </>
-        <ul>
-          {[1, 2, 3, 4].map(item => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
+
+  const anotherElement = <h1> HEYO </h1>
   
   document.getElementById("root").appendChild(<UsingFragment name="foo" />);
+  document.getElementById("root").appendChild(anotherElement);
   
