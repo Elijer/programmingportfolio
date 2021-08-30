@@ -4,5 +4,5 @@ import { createElement, createFragment } from '../utility/jsx'
 /*** @jsxFrag createFragment */
 
 export const banner = <div id = "banner">
-<h1> Elijah Kennedy </h1>
+<h1> ELIJAH KENNEDY </h1>
 </div>
