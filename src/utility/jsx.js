@@ -25,3 +25,11 @@ const appendChild = (parent, child) => {
 export const createFragment = (props, ...children) => {
     return children;
   };
+
+export const append = (el, target) => {
+  if (!target){
+    document.getElementById("root").appendChild(el);
+  } else {
+    document.getElementById(target).appendChild(el);
+  }
+}
