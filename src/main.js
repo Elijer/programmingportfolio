@@ -1,9 +1,10 @@
 import { createElement, createFragment } from '/utility/jsx'
 import { UsingFragment } from '/components/usingFragment'
-import { heyo } from '/components/heyo'
+import { banner } from '/components/banner'
 
 /** @jsx createElement */
 /*** @jsxFrag createFragment */
   
-document.getElementById("root").appendChild(<UsingFragment name="foo" />);
-document.getElementById("root").appendChild(heyo);
+// document.getElementById("root").appendChild(banner);
+//document.getElementById("root").appendChild(<UsingFragment name="foo" />);
+document.getElementById("root").appendChild(banner);
