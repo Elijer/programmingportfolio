@@ -8,5 +8,5 @@ import { banner, grid } from '/components/general'
 // document.getElementById("root").appendChild(banner);
 //document.getElementById("root").appendChild(<UsingFragment name="foo" />);
 append(banner);
-append(grid);
+append(grid(4));
 //document.getElementById("root").appendChild(banner);
