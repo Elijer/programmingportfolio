@@ -23,5 +23,8 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "serve": "^11.2.0"
+  },
+  "dependencies": {
+    "redom": "^3.27.1"
   }
 }
