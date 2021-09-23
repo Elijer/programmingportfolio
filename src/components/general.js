@@ -46,28 +46,32 @@ export const portfolio = () => {
         const tile =
         <div id = {"tile-" + piece.id} class = "tile" >
 
-            <img
-            id = {"tile-img" + piece.id}
-            class = "tile-img"
-            src = {piece.url} >
-            </img>
+            <a href = {piece.link}>
 
-            <div class = "tile-body">
+                <img
+                id = {"tile-img" + piece.id}
+                class = "tile-img"
+                src = {piece.url} >
+                </img>
 
-                <h1
-                id = {"tile-title-"+piece.id}
-                class = "tile-title">
-                    {piece.title}
-                </h1>
+                <div class = "tile-body">
 
-                <p
-                id = {"tile-desc" + piece.id}
-                class = "tile-desc">
-                    {piece.description}
-                </p>
+                    <h1
+                    id = {"tile-title-"+piece.id}
+                    class = "tile-title">
+                        {piece.title}
+                    </h1>
 
-            </div>
+                    <p
+                    id = {"tile-desc" + piece.id}
+                    class = "tile-desc">
+                        {piece.description}
+                    </p>
 
+                </div>
+
+            </a>
+            
         </div>
 
         // Finally, add the tile to the portfolio container
