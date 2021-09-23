@@ -7,9 +7,9 @@
 .tile {
     margin: 20px;
     border-radius: 15px;
-    background: $tile-inactive; // partially transparent; that's the last value
     overflow: hidden;
-    box-shadow: 0px 0px 0px 2px $tile-inactive;
+    background: rgb($tilebase, .2);
+    box-shadow: 0px 0px 0px 2px rgb($tilebase, .2);
 
     .tile-img {
         opacity: 70%;
@@ -22,14 +22,14 @@
     .tile-body {
         padding: 0px 20px 10px;
         margin-top: 0px;
-        color: rgb(255, 255, 255, 0.8);
+        color: rgb($tilebase, 0.8);
 
         .tile-title {
             font-size: 25px;
         }
         
         .tile-desc {
-            color: rgb(255, 255, 255, .5);
+            color: rgb($tilebase, .5);
             margin: 0px;
         }
 
@@ -37,13 +37,13 @@
 
     &:hover {
         background: rgb($highlight, 1);
-        box-shadow: 0px 0px 0px 1px rgb(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 0px 1px rgb($tilebase, 0.8);
 
         .tile-img {
             opacity: 80%;
             width: 105%;
             transition: width 1s;
-            border-bottom: 1px solid rgb(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgb($tilebase, 0.8);
         }
     }
 
