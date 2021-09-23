@@ -28,17 +28,21 @@ export const portfolio = () => {
             src = "https://i2.wp.com/www.knom.org/wp/wp-content/uploads/2019/09/Bull-Moose-stock-image-from-Pixabay.jpg?fit=1200%2C800&ssl=1" width = "300px">
             </img>
 
-            <h1
-            id = {"tile-title-"+{i}}
-            class = "tile-title">
-                Title {i}
-            </h1>
+            <div class = "tile-body">
 
-            <p
-            id = {"tile-desc" + i}
-            class = "tile-desc">
-                Description {i*6}: This is a description for this title.
-            </p>
+                <h1
+                id = {"tile-title-"+{i}}
+                class = "tile-title">
+                    Title {i}
+                </h1>
+
+                <p
+                id = {"tile-desc" + i}
+                class = "tile-desc">
+                    Description {i*6}: This is a description for this title.
+                </p>
+
+            </div>
 
         </div>
 
