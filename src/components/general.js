@@ -10,7 +10,7 @@ export const banner =
     <h1> ELIJAH KENNEDY </h1>
 </div>
 
-export const test = () => {
+export const portfolio = () => {
     var container =
     <div id = "target" >
     </div>;
