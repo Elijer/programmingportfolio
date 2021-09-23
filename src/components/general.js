@@ -10,6 +10,18 @@ export const banner =
     <h1> ELIJAH KENNEDY </h1>
 </div>
 
+var pieces = [
+    {
+        url: "https//i2.wp.com/www.knom.org/wp/wp-content/uploads/2019/09/Bull-Moose-stock-image-from-Pixabay.jpg?fit=1200%2C800&ssl=1",
+        title: "Moose",
+        id: "moose",
+        description: "This is a moose that I created with my godlike powers.",
+        stack: ["flesh", "blood", "grey-matter"],
+        link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
+    },
+
+]
+
 export const portfolio = () => {
     var port =
     <div id = "port" >
@@ -17,7 +29,8 @@ export const portfolio = () => {
 
     append(port);
 
-    for (var i = 0; i < 10; i++){
+    for (const piece of pieces ){
+    //for (var i = 0; i < 10; i++){
 
         const tile =
         <div id = {"tile-" + i} class = "tile" >

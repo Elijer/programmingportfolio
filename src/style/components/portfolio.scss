@@ -1,30 +1,43 @@
 
 #port {
-    padding: 80px;
+    padding: 0px 80px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .tile {
     margin: 20px;
     border-radius: 15px;
-    background: white;
+    background: rgb(219, 219, 219, 0.2); // partially transparent; that's the last value
     overflow: hidden;
 
+    &:hover {
+        background: rgb(206, 112, 112);
+        .tile-img {
+            opacity: 100%;
+            width: 110%;
+            transition: width 1s;
+        }
+    }
+
     .tile-img {
+        opacity: 70%;
         object-fit: cover;
         width: 100%;
         height: 170px;
+        transition: width 1s;
     }
 
     .tile-body {
+        padding: 20px;
 
         .tile-title {
+            font-size: 25px;
     
         }
         
         .tile-desc {
-        
+            
         }
 
     }
