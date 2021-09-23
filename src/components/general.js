@@ -11,17 +11,17 @@ export const banner =
 </div>
 
 export const portfolio = () => {
-    var container =
-    <div id = "target" >
+    var port =
+    <div id = "port" >
     </div>;
 
-    append(container);
+    append(port);
 
     for (var i = 0; i < 10; i++){
-        const someEl = <h1> Yohoo </h1>
-        document.getElementById("target").appendChild(someEl);
+        const tile = <h1 id = {"tile-" + i} class = "tile" > Yohoo </h1>
+        document.getElementById("port").appendChild(tile);
     }
 
-    return container;
+    return port;
 
 }
