@@ -10,15 +10,6 @@
     background: rgb(219, 219, 219, 0.2); // partially transparent; that's the last value
     overflow: hidden;
 
-    &:hover {
-        background: rgb(206, 112, 112);
-        .tile-img {
-            opacity: 100%;
-            width: 110%;
-            transition: width 1s;
-        }
-    }
-
     .tile-img {
         opacity: 70%;
         object-fit: cover;
@@ -29,7 +20,7 @@
 
     .tile-body {
         padding: 20px;
-        color: white;
+        color: rgb(255, 255, 255, 0.8);
 
         .tile-title {
             font-size: 25px;
@@ -37,9 +28,19 @@
         }
         
         .tile-desc {
-            
+            color: rgb(255, 255, 255, .5);
+            margin: 0px;
         }
 
+    }
+
+    &:hover {
+        background: rgb(206, 112, 112);
+        .tile-img {
+            opacity: 80%;
+            width: 105%;
+            transition: width 1s;
+        }
     }
 
 }
