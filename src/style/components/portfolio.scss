@@ -6,10 +6,11 @@
 
 .tile {
     margin: 20px;
-    border-radius: 15px;
+    border-radius: $border-radius;
     overflow: hidden;
-    background: rgb($tilebase, .2);
-    box-shadow: 0px 0px 0px 2px rgb($tilebase, .2);
+    background: rgb($bg, .2);
+    box-shadow: $shadow;
+    //box-shadow: 0px 0px 0px 2px rgb($bg, .2); // border-like box-shadow
 
     .tile-img {
         opacity: 70%;
@@ -22,29 +23,40 @@
     .tile-body {
         padding: 0px 20px 10px;
         margin-top: 0px;
-        color: rgb($tilebase, 0.8);
+        color: rgb($bg, 0.8);
 
         .tile-title {
             font-size: 25px;
         }
         
         .tile-desc {
-            color: rgb($tilebase, .5);
+            color: rgb($bg, .5);
             margin: 0px;
         }
 
     }
 
+    transition: margin .6s;
+
     &:hover {
         background: rgb($highlight, 1);
-        box-shadow: 0px 0px 0px 1px rgb($tilebase, 0.8);
+        box-shadow: none;
+        margin: 0px;
+        transition: margin .6s;
 
         .tile-img {
             opacity: 80%;
             width: 105%;
             transition: width 1s;
-            border-bottom: 1px solid rgb($tilebase, 0.8);
         }
+
+        // Border on Higlight
+        /*
+        box-shadow: 0px 0px 0px 1px rgb($bg, 0.8);
+        .tile-img {
+            border-bottom: 1px solid rgb($bg, 0.8);
+        }
+        */
     }
 
 }
