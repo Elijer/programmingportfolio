@@ -21,6 +21,14 @@ export const portfolio = () => {
             description: "This is a moose that I created with my godlike powers.",
             stack: ["flesh", "blood", "grey-matter"],
             link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
+        },
+        {
+            url: "https://wilderness-society.org/wp-content/uploads/2021/03/moose-70254.jpg",
+            title: "Another Moose",
+            id: "moose2",
+            description: "This moose on the other hand...it created me",
+            stack: ["flesh", "blood", "grey-matter"],
+            link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
         }
 
     ]

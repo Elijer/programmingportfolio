@@ -1,6 +1,5 @@
 
 #port {
-    padding: 0px 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -30,6 +29,7 @@
 
     .tile-body {
         padding: 20px;
+        color: white;
 
         .tile-title {
             font-size: 25px;
