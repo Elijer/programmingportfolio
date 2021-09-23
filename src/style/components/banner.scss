@@ -8,13 +8,13 @@
     font-style: italic;
 
     h1 {
-        color: rgb(206, 112, 112, 0.4);
+        color: rgb($highlight, 0.4);
         font-size: 80px;
-        transition: color .2s;
-        
+        transition: color .9s;
+
         &:hover {
             transition: color .5s;
-            color: rgb(206, 112, 112, 1);
+            color: $highlight;
         }
     }
 }
