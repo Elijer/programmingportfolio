@@ -1,4 +1,3 @@
-
 #port {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,7 +16,6 @@
         object-fit: cover;
         width: 100%;
         height: 160px;
-        transition: width 1s;
     }
 
     .tile-body {
@@ -36,18 +34,14 @@
 
     }
 
-    transition: margin .6s;
-
     &:hover {
         background: rgb($highlight, 1);
         box-shadow: none;
         margin: 0px;
-        transition: margin .6s;
 
         .tile-img {
             opacity: 80%;
             width: 105%;
-            transition: width 1s;
         }
 
         // Border on Higlight
@@ -60,3 +54,5 @@
     }
 
 }
+
+@import "./portfolio-transitions";
