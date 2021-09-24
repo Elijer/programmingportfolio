@@ -95,12 +95,12 @@ export const portfolio = () => {
 
     append(port);
 
-    for (var piece of pieces){
+    for (let piece of pieces){
         if (piece.active == true){
             console.log(piece.url);
             //for (var i = 0; i < 10; i++){
 
-            let id = piece.id;
+            //let id = piece.id;
 
             const tile =
             <div id = {"tile-" + piece.id} class = "tile" >
@@ -137,7 +137,7 @@ export const portfolio = () => {
 
             tile.addEventListener("mouseenter", function( event ) {
                 //console.log(id)
-                document.getElementById("tile-img-" + id).src = "none";
+                document.getElementById("tile-img-" + piece.id).src = "none";
             }, false);
 
             // Finally, add the tile to the portfolio container
