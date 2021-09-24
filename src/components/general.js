@@ -21,7 +21,7 @@ export const portfolio = () => {
         {   
             active: true,
             url: require("../../media/commerce2.png"),
-            gif: require("../../media/gifs/cafe1.gif"),
+            gif: require("../../media/gifs/auctions1.gif"),
             title: "Auctions",
             id: "auctions",
             description: "Ebay-like bidding platform with images and login system",
@@ -135,14 +135,16 @@ export const portfolio = () => {
                 </a>
                 
             </div>
+            
+                // Handle gif display for images on mouse hover
+                let imgID = "tile-img-" + piece.id;
 
-            let imgID = gg("tile-img-" + piece.id);
+                tile.addEventListener("mouseenter",
+                () =>  gg(imgID).src = piece.gif );
 
-            tile.addEventListener("mouseenter",
-            () =>  gg(imgID).src = piece.gif );
+                tile.addEventListener("mouseleave",
+                () => gg(imgID).src = piece.url );
 
-            tile.addEventListener("mouseleave",
-            () => gg(imgID).src = piece.url );
 
             // Finally, add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);
