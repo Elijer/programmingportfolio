@@ -135,9 +135,13 @@ export const portfolio = () => {
                 
             </div>
 
-            tile.addEventListener("mouseenter", function( event ) {
+            tile.addEventListener("mouseenter", function(event) {
+                document.getElementById("tile-img-" + piece.id).src = piece.gif;
+            });
+
+            tile.addEventListener("mouseleave", function( event ) {
                 //console.log(id)
-                document.getElementById("tile-img-" + piece.id).src = "none";
+                document.getElementById("tile-img-" + piece.id).src = piece.url;
             }, false);
 
             // Finally, add the tile to the portfolio container
