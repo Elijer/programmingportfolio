@@ -136,17 +136,13 @@ export const portfolio = () => {
                 
             </div>
 
-            let el = document.getElementById("tile-img-" + piece.id);
-            //let imageElement = document.getElementById("tile-img-" + piece.id);
+            let imgID = gg("tile-img-" + piece.id);
 
-            tile.addEventListener("mouseenter", function(event) {
-                gg("tile-img-" + piece.id).src = piece.gif;
-            });
+            tile.addEventListener("mouseenter",
+            () =>  gg(imgID).src = piece.gif );
 
-            tile.addEventListener("mouseleave", function( event ) {
-                //console.log(id)
-                gg("tile-img-" + piece.id).src = piece.url;
-            }, false);
+            tile.addEventListener("mouseleave",
+            () => gg(imgID).src = piece.url );
 
             // Finally, add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);
