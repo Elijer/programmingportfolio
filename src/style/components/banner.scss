@@ -10,13 +10,29 @@
 
     h1 {
         color: rgb($bg, 0.1);
-        line-height: 50px;
-        font-size: 125px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        line-height: 80px;
+        font-size: 120px;
         transition: color .9s;
+        color: white;
+
+
+/*         .first-name {
+            color: white;
+            z-index: 200;
+            opacity: 60%;
+        }
+
+        .last-name {
+            color: rgb(165, 73, 73);
+            z-index: -999;
+            opacity: 60%;
+        } */
 
         &:hover {
             transition: color .5s;
-            color: rgb($bg, .8);
+            color: rgb(255, 123, 15);
         }
     }
 }
