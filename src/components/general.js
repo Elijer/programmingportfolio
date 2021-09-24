@@ -100,6 +100,8 @@ export const portfolio = () => {
             console.log(piece.url);
             //for (var i = 0; i < 10; i++){
 
+            let id = piece.id;
+
             const tile =
             <div id = {"tile-" + piece.id} class = "tile" >
 
@@ -108,7 +110,7 @@ export const portfolio = () => {
                 >
 
                     <img
-                    id = {"tile-img" + piece.id}
+                    id = {"tile-img-" + piece.id}
                     class = "tile-img"
                     src = {piece.url} >
                     </img>
@@ -132,6 +134,11 @@ export const portfolio = () => {
                 </a>
                 
             </div>
+
+            tile.addEventListener("mouseenter", function( event ) {
+                //console.log(id)
+                document.getElementById("tile-img-" + id).src = "none";
+            }, false);
 
             // Finally, add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);
