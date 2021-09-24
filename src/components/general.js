@@ -2,6 +2,9 @@ import { createElement, createFragment } from '../utility/jsx'
 import { append } from '/utility/jsx'
 import { el, mount } from "redom";
 
+// This is another way to import images with parcel
+//import commerce1 from "../../media/commerce1.png";
+
 /** @jsx createElement */
 /*** @jsxFrag createFragment */
 
@@ -15,16 +18,16 @@ export const portfolio = () => {
 
     var pieces = [
         {
-            url: "https://i.natgeofe.com/n/21838d6e-005b-4ae9-a781-016bb156cf6c/01mooseWAQ.jpg",
-            title: "Moose",
-            id: "moose",
-            description: "This is a moose that I created with my godlike powers.",
-            stack: ["flesh", "blood", "grey-matter"],
+            url: require("../../media/commerce2.png"),
+            title: "Auction Site",
+            id: "auction",
+            description: "Ebay-like bidding platform with user and image posting.",
+            stack: ["django", "sass", "MYSQL"],
             link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
         },
         {
-            url: "https://wilderness-society.org/wp-content/uploads/2021/03/moose-70254.jpg",
-            title: "Another Moose",
+            url: require("../../media/codingwiki1.png"),
+            title: "Programming Wiki",
             id: "moose2",
             description: "This moose on the other hand...it created me",
             stack: ["flesh", "blood", "grey-matter"],

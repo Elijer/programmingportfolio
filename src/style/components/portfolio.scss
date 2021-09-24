@@ -12,7 +12,6 @@
     overflow: hidden;
     background: rgb($bg, .2);
     box-shadow: $shadow;
-    //box-shadow: 0px 0px 0px 2px rgb($bg, .2); // border-like box-shadow
 
     .tile-img {
         opacity: 70%;
@@ -34,26 +33,6 @@
             color: rgb($bg, .5);
             margin: 0px;
         }
-
-    }
-
-    &:hover {
-        background: rgb($highlight, 1);
-        box-shadow: none;
-        margin: 0px;
-
-        .tile-img {
-            opacity: 80%;
-            width: 105%;
-        }
-
-        // Border on Higlight
-        /*
-        box-shadow: 0px 0px 0px 1px rgb($bg, 0.8);
-        .tile-img {
-            border-bottom: 1px solid rgb($bg, 0.8);
-        }
-        */
     }
 
 }
