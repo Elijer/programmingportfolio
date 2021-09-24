@@ -11,7 +11,10 @@ import { el, mount } from "redom";
 
 export const banner =
 <div id = "banner">
-    <h1> ELIJAH KENNEDY </h1>
+    <h1>
+        <span class = "first-name">ELIJAH </span>
+        <span class = "last-name">KENNEDY</span>
+    </h1>
 </div>
 
 export const portfolio = () => {
