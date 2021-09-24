@@ -120,14 +120,14 @@ export const portfolio = () => {
                             {piece.title}
                         </h1>
 
+                        <div id = {"stack-" + piece.id} class = "tile-stack">
+                        </div>
+
                         <p
                         id = {"tile-desc-" + piece.id}
                         class = "tile-desc">
                             {piece.description}
                         </p>
-
-                        <div id = {"stack-" + piece.id} class = "stack-container">
-                        </div>
                         
 
                     </div>
