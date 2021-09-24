@@ -1,0 +1,21 @@
+
+
+.tile {
+
+
+    .tile-img {
+        transition: width 1s;
+    }
+
+    transition: margin .6s;
+
+    &:hover {
+        transition: margin .6s;
+
+        .tile-img {
+            transition: width 1s;
+        }
+
+    }
+
+}
