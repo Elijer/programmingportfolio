@@ -2,7 +2,6 @@
 
 .tile {
 
-
     .tile-img {
         transition: width 1s;
     }
@@ -12,12 +11,13 @@
     &:hover {
         background: rgb($highlight, 1);
         box-shadow: none;
-        margin: 0px; // normal is 20px
+        transition: background .6s;
         //transition: margin .6s;
 
         .tile-img {
-            opacity: 80%;
-            width: 105%;
+            opacity: 100%;
+            //height: 80%;
+            //width: 105%;
             transition: width 1s;
         }
 

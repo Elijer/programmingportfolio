@@ -7,7 +7,7 @@
 }
 
 .tile {
-    margin: 20px;
+    margin: 14px;
     border-radius: $border-radius;
     overflow: hidden;
     background: rgb($bg, .2);
@@ -31,7 +31,10 @@
         
         .tile-desc {
             color: rgb($bg, .5);
+            font-size: 16px;
             margin: 0px;
+            margin-bottom: 12px;
+            line-height: 18px;
         }
     }
 

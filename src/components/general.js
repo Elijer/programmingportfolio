@@ -31,7 +31,7 @@ export const portfolio = () => {
         {
             active: true,
             url: require("../../media/codingwiki1.png"),
-            gif: require("../../media/gifs/cafe1.gif"),
+            gif: require("../../media/gifs/wiki1.gif"),
             title: "Wiki",
             id: "wiki",
             description: "Custom wiki I use to keep and share all my programming notes.",
@@ -41,7 +41,7 @@ export const portfolio = () => {
         {
             active: true,
             url: require("../../media/bodega3.png"),
-            gif: require("../../media/gifs/cafe1.gif"),
+            gif: require("../../media/gifs/bodega1.gif"),
             title: "Bodega.Photo",
             id: "bodega",
             description: "A color sampling tool that grabs color-keys out of your uploaded images.",
@@ -51,7 +51,7 @@ export const portfolio = () => {
         {
             active: false,
             url: require("../../media/jinjialin3.png"),
-            gif: require("../../media/gifs/cafe1.gif"),
+            gif: require("../../media/jinjialin3.png"),
             title: "Jinjialin",
             id: "jinjialin",
             description: "Fun informational site about a fictional planet, with incorporated chat and twitter.",
@@ -61,7 +61,7 @@ export const portfolio = () => {
         {
             active: true,
             url: require("../../media/wesume1.png"),
-            gif: require("../../media/gifs/cafe1.gif"),
+            gif: require("../../media/wesume1.png"),
             title: "Resume",
             id: "resume",
             description: "My online resume with filterable experience entries.",
@@ -71,7 +71,7 @@ export const portfolio = () => {
         {
             active: true,
             url: require("../../media/gyst6.png"),
-            gif: require("../../media/gifs/cafe1.gif"),
+            gif: require("../../media/gifs/gyst1.gif"),
             title: "Playgyst.com",
             id: "gyst",
             description: "Two-player game similar to tic-tac-toe. Play it with a friend!",
@@ -98,10 +98,6 @@ export const portfolio = () => {
 
     for (let piece of pieces){
         if (piece.active == true){
-            console.log(piece.url);
-            //for (var i = 0; i < 10; i++){
-
-            //let id = piece.id;
 
             const tile =
             <div id = {"tile-" + piece.id} class = "tile" >
@@ -125,10 +121,14 @@ export const portfolio = () => {
                         </h1>
 
                         <p
-                        id = {"tile-desc" + piece.id}
+                        id = {"tile-desc-" + piece.id}
                         class = "tile-desc">
                             {piece.description}
                         </p>
+
+                        <div id = {"stack-" + piece.id} class = "stack-container">
+                        </div>
+                        
 
                     </div>
 
@@ -140,11 +140,23 @@ export const portfolio = () => {
                 let imgID = "tile-img-" + piece.id;
 
                 tile.addEventListener("mouseenter",
-                () =>  gg(imgID).src = piece.gif );
+                () => {
+                    gg(imgID).src = piece.gif;
+                });
 
                 tile.addEventListener("mouseleave",
-                () => gg(imgID).src = piece.url );
+                () => {
+                    gg(imgID).src = piece.url;
+                });
 
+                for (let tech of piece.stack){
+                    let stack =
+                    <div id = {"stack-item-" + piece.id} class = "stack-item">
+                        tech
+                    </div>;
+
+                    //document.getElementById("stack-" + piece.id).appendChild(stack)
+                }
 
             // Finally, add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);
