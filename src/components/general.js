@@ -136,30 +136,31 @@ export const portfolio = () => {
                 
             </div>
             
-                // Handle gif display for images on mouse hover
-                let imgID = "tile-img-" + piece.id;
+            // Handle gif display for images on mouse hover
+            let imgID = "tile-img-" + piece.id;
 
-                tile.addEventListener("mouseenter",
-                () => {
-                    gg(imgID).src = piece.gif;
-                });
+            tile.addEventListener("mouseenter",
+            () => {
+                gg(imgID).src = piece.gif;
+            });
 
-                tile.addEventListener("mouseleave",
-                () => {
-                    gg(imgID).src = piece.url;
-                });
-
-                for (let tech of piece.stack){
-                    let stack =
-                    <div id = {"stack-item-" + piece.id} class = "stack-item">
-                        tech
-                    </div>;
-
-                    //document.getElementById("stack-" + piece.id).appendChild(stack)
-                }
+            tile.addEventListener("mouseleave",
+            () => {
+                gg(imgID).src = piece.url;
+            });
 
             // Finally, add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);
+
+            for (let tech of piece.stack){
+                let stack =
+                <div id = {"stack-item-" + piece.id} class = "stack-item">
+                    {tech}
+                </div>;
+
+                document.getElementById("stack-" + piece.id).appendChild(stack)
+            }
+
         }
 
     }
