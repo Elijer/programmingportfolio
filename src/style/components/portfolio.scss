@@ -6,8 +6,12 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* #tile-wiki {
+    background: black;
+} */
+
 .tile {
-    margin: 14px;
+    margin: 16px;
     border-radius: $border-radius;
     overflow: hidden;
     background: rgb($bg, .2);
@@ -27,31 +31,32 @@
 
         .tile-title {
             font-size: 25px;
+            display: inline;
         }
-        
+
+        .tile-stack {
+            display: block;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgb(rgb(155, 148, 148), .2);
+
+            .stack-item {
+                padding: 0px 5px;
+                font-size: 12px;
+                display: inline;
+                margin-right: 3px;
+                background: rgb(rgb(155, 148, 148), .2);
+                border-radius: $border-radius;
+            }
+
+        }
+
         .tile-desc {
             color: rgb($bg, .5);
             font-size: 16px;
             margin: 0px;
             margin-bottom: 12px;
             line-height: 18px;
-        }
-
-        .tile-stack {
-            display: block;
-            margin-bottom: 10px;
-
-            .stack-item {
-                font-size: 12px;
-                display: inline;
-                margin-right: 5px;
-                margin-bottom: 4px;
-                padding: 3px;
-                background: rgb(white, .2);
-                border-bottom: 2px solid rgba(74, 48, 104, 0.1);
-                border-radius: $border-radius;
-            }
-
         }
     }
 

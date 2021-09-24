@@ -12,7 +12,8 @@
         background: rgb($highlight, 1);
         box-shadow: none;
         transition: background .6s;
-        //transition: margin .6s;
+        //margin: 0px;
+        transition: margin .6s;
 
         .tile-img {
             opacity: 100%;

@@ -25,7 +25,7 @@ export const portfolio = () => {
             title: "Auctions",
             id: "auctions",
             description: "Ebay-like bidding platform with images and login system",
-            stack: ["django", "sass", "MYSQL"],
+            stack: ["Django", "Sass", "MYSQL"],
             link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
         },
         {
@@ -35,7 +35,7 @@ export const portfolio = () => {
             title: "Wiki",
             id: "wiki",
             description: "Custom wiki I use to keep and share all my programming notes.",
-            stack: ["django", "MYSQL", "Sass"],
+            stack: ["Django", "MYSQL", "Sass"],
             link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
         },
         {
@@ -44,8 +44,8 @@ export const portfolio = () => {
             gif: require("../../media/gifs/bodega1.gif"),
             title: "Bodega.Photo",
             id: "bodega",
-            description: "A color sampling tool that grabs color-keys out of your uploaded images.",
-            stack: ["javascript", "NPM"],
+            description: "Grab color samples out of uploaded photos.",
+            stack: ["JS", "NPM"],
             link: "https://bodega.photo/"
         },
         {
@@ -55,7 +55,7 @@ export const portfolio = () => {
             title: "Jinjialin",
             id: "jinjialin",
             description: "Fun informational site about a fictional planet, with incorporated chat and twitter.",
-            stack: ["javascript", "NPM"],
+            stack: ["JS", "NPM"],
             link: "https://invisibleplanetnine.web.app/"
         },
         {
@@ -65,7 +65,7 @@ export const portfolio = () => {
             title: "Resume",
             id: "resume",
             description: "My online resume with filterable experience entries.",
-            stack: ["javascript", "NPM", "Sass"],
+            stack: ["JS", "Sass"],
             link: "https://elijahresume.com/"
         },
         {
@@ -75,7 +75,7 @@ export const portfolio = () => {
             title: "Playgyst.com",
             id: "gyst",
             description: "Two-player game similar to tic-tac-toe. Play it with a friend!",
-            stack: ["Firebase", "Google Cloud Functions", "Sass"],
+            stack: ["Firebase", "Cloud-Functions", "Sass"],
             link: "https://playgyst.com/"
         },
         {
@@ -154,9 +154,9 @@ export const portfolio = () => {
 
             for (let tech of piece.stack){
                 let stack =
-                <div id = {"stack-item-" + piece.id} class = "stack-item">
+                <span id = {"stack-item-" + piece.id} class = "stack-item">
                     {tech}
-                </div>;
+                </span>;
 
                 document.getElementById("stack-" + piece.id).appendChild(stack)
             }
