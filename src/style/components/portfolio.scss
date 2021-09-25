@@ -11,18 +11,11 @@
 } */
 
 .tile {
-    margin: 16px;
+    margin: 6px;
     border-radius: $border-radius;
     overflow: hidden;
-    background: rgb($bg, .2);
+    background: rgb(white, .8);
     box-shadow: $shadow;
-
-    .tile-img {
-        opacity: 70%;
-        object-fit: cover;
-        width: 100%;
-        height: 160px;
-    }
 
     .tile-body {
         padding: 0px 20px 10px;
@@ -58,6 +51,14 @@
             margin-bottom: 12px;
             line-height: 18px;
         }
+    }
+
+    .tile-img {
+        opacity: 10%;
+        object-fit: cover;
+        width: 100%;
+        //height: 200px;
+        height: 140px;
     }
 
 }

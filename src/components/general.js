@@ -12,8 +12,9 @@ import { el, mount } from "redom";
 export const banner =
 <div id = "banner">
     <h1>
-        <span class = "first-name">ELIJAH </span>
-        <span class = "last-name">KENNEDY</span>
+        ELIJAH KENNEDY
+{/*         <span class = "first-name">ELIJAH </span>
+        <span class = "last-name">KENNEDY</span> */}
     </h1>
 </div>
 
@@ -90,9 +91,31 @@ export const portfolio = () => {
             description: "Social exploration web app built on top of google maps.",
             stack: ["Firebase", "Google Maps API"],
             link: "https://cafe-infinite.web.app/"
+        },
+        {
+            active: true,
+            url: require("../../media/rapid1.png"),
+            gif: require("../../media/gifs/rapid1.gif"),
+            title: "Rapid Notes",
+            id: "rapid",
+            description: "A text editor I built from scratch that makes note-taking faster and more fun.",
+            stack: ["Javascript"],
+            link: "https://portsite.web.app/editor/editor.html"
+        },
+        {
+            active: true,
+            url: require("../../media/firestripe1.png"),
+            gif: require("../../media/gifs/firestripe1.gif"),
+            title: "Firestripe",
+            id: "firestripe",
+            description: "Example site that can fully process real credit card payments.",
+            stack: ["Javascript, Stripe API, Firebase"],
+            link: "https://firestripe-boilerplate.web.app/"
         }
     ]
 
+
+    //https://portsite.web.app/editor/editor.html
     var port =
     <div id = "port" >
     </div>;
