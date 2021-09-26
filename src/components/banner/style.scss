@@ -15,7 +15,8 @@
         font-size: 56px;
         font-weight: 600;
         transition: color .4s;
-        color: rgb($orange, .4);
+        //color: rgb($brown, .4);
+        color: rgb($orange, .7);
 
 /*         .first-name {
             color: white;
@@ -30,8 +31,11 @@
         } */
 
         &:hover {
-            transition: color .4s;
             color: $purple;
+            text-shadow: 3px 3px $orange;
+
+            transition: color .4s;
+            transition: text-shadow .9s;
         }
     }
 }
