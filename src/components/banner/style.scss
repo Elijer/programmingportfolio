@@ -12,11 +12,12 @@
         display: inline;
         margin: 6px;
         line-height: 80px;
-        font-size: 56px;
+        font-size: 54px;
         font-weight: 600;
         transition: color .4s;
         //color: rgb($brown, .4);
-        color: rgb($orange, .7);
+        color: rgb($orange, 1);
+        //text-shadow: 2px 2px rgb(red, .1);
 
 /*         .first-name {
             color: white;
