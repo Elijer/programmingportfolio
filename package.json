@@ -25,6 +25,7 @@
     "serve": "^11.2.0"
   },
   "dependencies": {
+    "components": "^0.1.0",
     "redom": "^3.27.1"
   }
 }
