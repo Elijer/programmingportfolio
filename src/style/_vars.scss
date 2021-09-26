@@ -1,12 +1,12 @@
-$bg: rgb(64, 60, 68);
-$tilebase: white;
-$highlight: rgb(206, 112, 112);
+
+// Main Vars
+$orange:     rgb(255, 123, 15, .7);
+$yellow:     rgb(255, 222, 38);
+$brown:      rgb(155, 148, 148);
+$dark-brown: rgb(64, 60, 68);
+$purple:     rgb(140, 139, 226);
+
+$tile-fade:    60%;
+$transparent:  rgb(white, .8);
+$shadow: 2px 2px 4px rgb($dark-brown, .4);
 $border-radius: 7px;
-$shadow: 2px 2px 4px rgb($bg, .4);
-
-
-
-
-// New Vars
-$orange: rgb(255, 123, 15, .7);
-$yellow: rgb(255, 222, 38);
