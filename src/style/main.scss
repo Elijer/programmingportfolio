@@ -1,10 +1,8 @@
-@import "vars";
 @import "./reset";
+@import "vars";
 @import "./components";
 
 html {
-    //background: rgb(64, 60, 68);
-    //background: rgb($bg, .5);
     background: rgb(255, 222, 38);
     font-family: 'Poppins', sans-serif;
     padding: 5px 10%;
