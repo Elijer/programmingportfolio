@@ -44,4 +44,27 @@
             transition: text-shadow .9s;
         }
     }
+
+    div.tech-list {
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-bottom: 6px;
+        line-break: strict;
+
+
+        overflow: visible;
+
+        span.tech-bubble {
+            font-style: normal;
+            color: rgb($dark-brown, .7);
+            padding: 0px 7px;
+            font-size: 27px;
+            display: inline;
+            margin-right: 3px;
+            background: rgb($brown, .2);
+            border-radius: $rounded;
+        }
+
+    }
 }

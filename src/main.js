@@ -7,5 +7,5 @@ import { createElement, append } from '/utility/jsx'
 import { banner } from '/components/banner/banner'
 import { portfolio } from './components/portfolio/portfolio'
   
-append(banner);
-append(portfolio());
+banner();
+portfolio();

@@ -1,8 +1,11 @@
+const base_url = "/../media/commerce2.png"
+
 export var pieces = [
     {   
         active: true,
-        url: require("../../../media/commerce2.png"),
-        gif: require("../../../media/gifs/auctions1.gif"),
+        url: require("/../media/commerce2.png"),
+        //url: require("../../../media/commerce2.png"),
+        gif: require("/../media/gifs/auctions1.gif"),
         title: "Auctions",
         id: "auctions",
         description: "Ebay-like bidding platform with images and login system",
@@ -26,7 +29,7 @@ export var pieces = [
         title: "Bodega.Photo",
         id: "bodega",
         description: "Grab color samples out of uploaded photos.",
-        stack: ["JS", "NPM"],
+        stack: ["Javascript", "NPM"],
         link: "https://bodega.photo/"
     },
     {
@@ -36,7 +39,7 @@ export var pieces = [
         title: "Jinjialin",
         id: "jinjialin",
         description: "Fun informational site about a fictional planet, with incorporated chat and twitter.",
-        stack: ["JS", "NPM"],
+        stack: ["Javascript", "NPM"],
         link: "https://invisibleplanetnine.web.app/"
     },
     {
@@ -46,7 +49,7 @@ export var pieces = [
         title: "Resume",
         id: "resume",
         description: "My online resume with filterable experience entries.",
-        stack: ["JS", "Sass"],
+        stack: ["Javascript", "Sass"],
         link: "https://elijahresume.com/"
     },
     {
@@ -56,7 +59,7 @@ export var pieces = [
         title: "Playgyst.com",
         id: "gyst",
         description: "Two-player game similar to tic-tac-toe. Play it with a friend!",
-        stack: ["Firebase", "Cloud-Functions", "Sass"],
+        stack: ["Firebase", "Sass"],
         link: "https://playgyst.com/"
     },
     {
@@ -90,3 +93,26 @@ export var pieces = [
         link: "https://firestripe-boilerplate.web.app/"
     }
 ]
+
+export const techList = () => {
+
+    var techs = []
+
+    for (let piece of pieces){ // for each piece
+
+        piece.stack.forEach(element => { // and each tech in each piece's stack
+
+            if (techs.includes(element)){
+                // don't add to techs array -- it's already there
+            } else {
+                techs.push(element);
+            }
+
+        });
+
+    }
+
+    console.log(techs);
+    return techs;
+
+}
