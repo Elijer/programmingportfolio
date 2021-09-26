@@ -4,7 +4,7 @@ import { createElement, append } from '/utility/jsx'
 
 // ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
 
-import { banner } from '/components/banner'
+import { banner } from '/components/banner/banner'
 import { portfolio } from './components/portfolio/portfolio'
   
 append(banner);
