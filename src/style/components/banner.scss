@@ -9,12 +9,15 @@
     font-style: italic;
 
     h1 {
-        color: rgb($bg, 0.1);
+        //color: rgb($bg, 0.1);
+        color: black;
+        display: inline;
 
         line-height: 80px;
         font-size: 55px;
-        transition: color .9s;
-        color: white;
+        font-weight: 600;
+        transition: color .4s;
+        color: rgb(255, 253, 245);
 
 
 /*         .first-name {
@@ -30,7 +33,7 @@
         } */
 
         &:hover {
-            transition: color .5s;
+            transition: color .1s;
             color: rgb(255, 123, 15);
         }
     }
