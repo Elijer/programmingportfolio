@@ -1,4 +1,4 @@
-import { createElement, createFragment } from '../utility/jsx'
+import { createElement, createFragment } from '/utility/jsx'
 import { gg } from '../utility/helpers'
 import { append } from '/utility/jsx'
 import { el, mount } from "redom";

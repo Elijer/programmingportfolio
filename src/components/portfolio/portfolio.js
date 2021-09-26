@@ -1,12 +1,14 @@
-import { createElement, createFragment, append } from '../../utility/jsx'
-import { gg } from '../../utility/helpers'
+import { createElement, append } from '/utility/jsx'
+
+/** @jsx createElement */
+
+// ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
+
+import { gg } from '/utility/helpers'
 import { pieces } from './portfolioData.js'
 
 /* This is another way to import images with parcel
 import commerce1 from "../../media/commerce1.png"; */
-
-/** @jsx createElement */
-/*** @jsxFrag createFragment */
 
 export const portfolio = () => {
 

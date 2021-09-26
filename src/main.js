@@ -1,9 +1,11 @@
-import { createElement, createFragment, append } from '/utility/jsx'
-import { banner } from '/components/banner'
-import { portfolio } from './components/portfolio/portfolio'
+import { createElement, append } from '/utility/jsx'
 
 /** @jsx createElement */
-/*** @jsxFrag createFragment */
+
+// ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
+
+import { banner } from '/components/banner'
+import { portfolio } from './components/portfolio/portfolio'
   
 append(banner);
 append(portfolio());

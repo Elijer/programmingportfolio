@@ -1,7 +1,8 @@
-import { createElement, createFragment, append } from '../utility/jsx'
+import { createElement, append } from '/utility/jsx'
 
 /** @jsx createElement */
-/*** @jsxFrag createFragment */
+
+// ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
 
 export const banner =
 <div id = "banner">
