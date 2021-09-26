@@ -1,6 +1,9 @@
 #banner {
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 8px;
+    //border-bottom: 18px solid rgb($orange, .3);
+    margin-left: 6px;
+    margin-right: 6px;
     //color: rgb(29, 28, 28);
 
     font-family: 'Poppins', sans-serif;
@@ -10,14 +13,16 @@
     h1 {
         //color: rgb($bg, 0.1);
         display: inline;
-        margin: 6px;
+        //margin: 6px;
         line-height: 80px;
-        font-size: 54px;
+        font-size: 70px;
         font-weight: 600;
         transition: color .4s;
+        padding-bottom: -10px;
+        letter-spacing: -1000;
         //color: rgb($brown, .4);
-        color: rgb($orange, 1);
-        //text-shadow: 2px 2px rgb(red, .1);
+        color: rgb($orange, .6);
+        text-shadow: 2px 2px rgb(red, .1);
 
 /*         .first-name {
             color: white;
