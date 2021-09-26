@@ -56,14 +56,22 @@
         overflow: visible;
 
         span.tech-bubble {
+            opacity: .6;
             font-style: normal;
-            color: rgb($dark-brown, .7);
-            padding: 0px 7px;
-            font-size: 27px;
+            background: rgb(white, .5);
+            color: rgb($orange, .8);
+            padding: 8px 8px;
+            font-size: 22.5px;
+            font-weight: 500;
             display: inline;
             margin-right: 3px;
-            background: rgb($brown, .2);
             border-radius: $rounded;
+
+            &:hover {
+                opacity: 1;
+                background: rgb($purple, 1);
+                color: rgb(white, 1);
+            }
         }
 
     }
