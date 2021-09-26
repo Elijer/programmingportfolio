@@ -5,23 +5,18 @@ import { createElement, append } from '/utility/jsx'
 // ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
 
 import { gg } from '/utility/helpers'
-import { pieces } from './portfolioData.js'
+import { pieces } from './data.js'
 
 /* This is another way to import images with parcel
 import commerce1 from "../../media/commerce1.png"; */
 
 export const portfolio = () => {
 
-    //https://portsite.web.app/editor/editor.html
-    var port =
-    <div id = "port" >
-    </div>;
-
-    // I guess the append() utility function doesn't need to be imported because it's
-    // in the context of the main.js file that calls this construction function?
-
+    // 1) Create container to put portfolio in
+    var port = <div id = "port" ></div>;
     append(port);
 
+    // 2) Create a tile element for each portfolio piece in 'pieces' array
     for (let piece of pieces){
         if (piece.active == true){
 
@@ -59,7 +54,7 @@ export const portfolio = () => {
                     </div>
 
                 </a>
-                
+  
             </div>
             
             // Handle gif display for images on mouse hover
@@ -75,9 +70,10 @@ export const portfolio = () => {
                 gg(imgID).src = piece.url;
             });
 
-            // Finally, add the tile to the portfolio container
+            // Add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);
 
+            // Finally, now that the tile is in the DOM, we can add its tech stack
             for (let tech of piece.stack){
                 let stack =
                 <span id = {"stack-item-" + piece.id} class = "stack-item">
