@@ -1,5 +1,4 @@
 #banner {
-    margin-left: 20px;
     margin-top: 40px;
     margin-bottom: 25px;
     //color: rgb(29, 28, 28);
@@ -10,14 +9,13 @@
 
     h1 {
         //color: rgb($bg, 0.1);
-        color: black;
         display: inline;
-
+        margin: 6px;
         line-height: 80px;
-        font-size: 55px;
+        font-size: 56px;
         font-weight: 600;
         transition: color .4s;
-        color: rgb(255, 253, 245);
+        color: rgb(255, 123, 15, .7);
 
 
 /*         .first-name {

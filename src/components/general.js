@@ -11,8 +11,7 @@ import { el, mount } from "redom";
 
 export const banner =
 <div id = "banner">
-    <h1>
-        ELIJAH KENNEDY
+    <h1>ELIJAH KENNEDY
 {/*         <span class = "first-name">ELIJAH </span>
         <span class = "last-name">KENNEDY</span> */}
     </h1>
@@ -65,7 +64,7 @@ export const portfolio = () => {
         {
             active: true,
             url: require("../../media/wesume1.png"),
-            gif: require("../../media/wesume1.png"),
+            gif: require("../../media/gifs/wesume1.gif"),
             title: "Resume",
             id: "resume",
             description: "My online resume with filterable experience entries.",
@@ -84,12 +83,12 @@ export const portfolio = () => {
         },
         {
             active: true,
-            url: require("../../media/cafe1.png"),
+            url: require("../../media/cafe4.png"),
             gif: require("../../media/gifs/cafe1.gif"),
             title: "Cafe Infinite",
             id: "cafe",
             description: "Social exploration web app built on top of google maps.",
-            stack: ["Firebase", "Google Maps API"],
+            stack: ["Firebase", "Google Maps API", "Geolocation"],
             link: "https://cafe-infinite.web.app/"
         },
         {
@@ -109,7 +108,7 @@ export const portfolio = () => {
             title: "Firestripe",
             id: "firestripe",
             description: "Example site that can fully process real credit card payments.",
-            stack: ["Javascript, Stripe API, Firebase"],
+            stack: ["Javascript",  "Stripe API", "Firebase"],
             link: "https://firestripe-boilerplate.web.app/"
         }
     ]
