@@ -10,6 +10,6 @@ import { stack } from './components/stack/stack'
 import { about } from './components/about/about';
   
 banner();
-//portfolio();
-//stack();
+portfolio();
+stack();
 about();
