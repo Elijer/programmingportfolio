@@ -17,30 +17,30 @@ export const banner = () => {
 
     append(banner);
 
-    stacks.forEach(tech => {
+/*     stacks.forEach(tech => {
         let techBubble =
         <span class = "tech-bubble" data-descrip = {tech.description} data-link = {tech.link} > {tech.name} </span>;
 
         document.getElementById("tech-list").appendChild(techBubble);
 
-        let title = gg("site-title");
-        let descrip = gg("tech-description-display");
-/* 
+        let port = gg("port");
+        let desc = gg("tech-description-display");
+
         techBubble.addEventListener("mouseenter",
         () => {
-            descrip.style.display = "block"
-            descrip.innerHTML = tech.description;
-            title.style.display = "none"
+            desc.style.display = "block"
+            desc.innerHTML = tech.description;
+            port.style.display = "none"
         });
 
         techBubble.addEventListener("mouseleave",
         () => {
-            descrip.style.display = "none"
-            title.style.display = "block"
-        }); */
+            desc.style.display = "none"
+            port.style.display = "block"
+        });
         //append(techBubble, "tech-list");
 
-    });
+    }); */
 
     return banner;
 }
