@@ -6,6 +6,8 @@ import { createElement, append } from '/utility/jsx'
 
 import { banner } from '/components/banner/banner'
 import { portfolio } from './components/portfolio/portfolio'
+import { stack } from './components/stack/stack'
   
 banner();
 portfolio();
+stack();

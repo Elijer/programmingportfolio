@@ -15,6 +15,10 @@ export const portfolio = () => {
     // 1) Create container to put portfolio in
     var port = <div id = "port" ></div>;
     append(port);
+    
+    
+    // 1.1) Description container
+
 
     // 2) Create a tile element for each portfolio piece in 'pieces' array
     for (let piece of pieces){

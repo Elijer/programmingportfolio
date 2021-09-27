@@ -1,6 +1,14 @@
 #banner {
+
+    // Experiment for keeping banner at the top of the page the whole time
+    // The idea would be that the tech items light up when you hover over the appropriate project
+    // position: fixed;
+    // background: $yellow;
+    // z-index: 100;
+
+
     margin-top: 40px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     //border-bottom: 18px solid rgb($orange, .3);
     margin-left: 6px;
     margin-right: 6px;
@@ -45,6 +53,19 @@
         }
     }
 
+    #site-title {
+        //display: none;
+    }
+
+    #tech-description-display {
+        display: block;
+        font-size: 30px;
+        position: relative;
+        line-height: 35px;
+        font-style: normal;
+        text-shadow: none;
+    }
+
     div.tech-list {
         display: block;
         margin-bottom: 10px;
@@ -56,7 +77,7 @@
         overflow: visible;
 
         span.tech-bubble {
-            opacity: .6;
+            opacity: .5;
             font-style: normal;
             background: rgb(white, .5);
             color: rgb($orange, .8);
