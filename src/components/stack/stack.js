@@ -5,7 +5,7 @@ import { createElement, append } from '/utility/jsx'
 // ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
 
 import { gg } from '/utility/helpers'
-import { stacks } from '../portfolio/data.js'
+import { stacks } from './data.js'
 
 export const stack = () => {
 
