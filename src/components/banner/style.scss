@@ -32,18 +32,6 @@
         color: rgb($orange, .6);
         text-shadow: 2px 2px rgb(red, .1);
 
-/*         .first-name {
-            color: white;
-            z-index: 200;
-            opacity: 60%;
-        }
-
-        .last-name {
-            color: rgb(165, 73, 73);
-            z-index: -999;
-            opacity: 60%;
-        } */
-
         &:hover {
             color: $purple;
             text-shadow: 3px 3px $orange;
@@ -51,19 +39,6 @@
             transition: color .4s;
             transition: text-shadow .9s;
         }
-    }
-
-    #site-title {
-        //display: none;
-    }
-
-    #tech-description-display {
-        display: block;
-        font-size: 30px;
-        position: relative;
-        line-height: 35px;
-        font-style: normal;
-        text-shadow: none;
     }
 
     div.tech-list {
