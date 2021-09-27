@@ -10,7 +10,13 @@ import { stacks } from '../portfolio/data.js'
 export const stack = () => {
 
     // 1) Create a container for the stack descripton
-    let stackDescription = <h1 id = "tech-description-display"> Example content for stack </h1>
+    let stackDescription =
+    <div id = "tech-description-display">
+        <div id = "name-block">
+            <h1 id = "tech-description-name"></h1>
+        </div>
+        <p id = "tech-description-description"></p>
+    </div>
     document.getElementById("root").appendChild(stackDescription)
 
 
@@ -22,18 +28,21 @@ export const stack = () => {
         document.getElementById("tech-list").appendChild(techBubble);
 
         let port = gg("port");
-        let desc = gg("tech-description-display");
+        let display = gg("tech-description-display");
+        let desc = gg("tech-description-description");
+        let name = gg("tech-description-name");
 
         techBubble.addEventListener("mouseenter",
         () => {
-            desc.style.display = "block"
+            display.style.display = "block"
             desc.innerHTML = tech.description;
+            name.innerHTML = tech.name;
             port.style.display = "none"
         });
 
         techBubble.addEventListener("mouseleave",
         () => {
-            desc.style.display = "none"
+            display.style.display = "none"
             port.style.display = "grid"
         });
         //append(techBubble, "tech-list");
