@@ -72,3 +72,17 @@
 
     }
 }
+
+@media screen and (max-width: 480px) {
+    #banner {
+        div.tech-list {
+            display: none;
+
+            span.tech-bubble {
+                display: inline;
+                line-height: 40px;
+            }
+        }
+    }
+
+}

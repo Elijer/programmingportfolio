@@ -18,7 +18,7 @@ export const about = () => {
     //document.getElementById("root").appendChild(about)
 
     const aboutContent =
-    "Hi, I'm a web designer based in Memphis. I wouldn't say 'fullstack', I would say 'midfield'. I excel at querying databases, writing and consuming APIs, and building web apps."
+    "Hi, I'm a web designer based in Memphis. My role as a developer is like playing midfield in soccer - I am neither a frontend nor backend specialist; I can support everything in between. "
     
     let title = gg("site-title")
     let port = gg("port");

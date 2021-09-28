@@ -48,4 +48,5 @@ export const stack = () => {
         //append(techBubble, "tech-list");
 
     });
+
 }

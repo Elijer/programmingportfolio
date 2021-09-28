@@ -64,3 +64,19 @@
     }
 
 }
+
+@media screen and (max-width: 480px) {
+
+    #port {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tile {
+        .tile-body {
+            .tile-title {
+                font-size: 34px;
+            }
+        }
+    }
+
+  }
