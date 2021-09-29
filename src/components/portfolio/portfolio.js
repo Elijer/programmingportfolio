@@ -36,8 +36,8 @@ export const portfolio = (storage) => {
                     src = {piece.url} >
                     </img>
 
-                    <video autoplay muted
-                    loop inline
+                    <video
+                    autoplay muted loop inline
                     class = "tile-gif"
                     id = {"tile-gif-" + piece.id}
                     >
@@ -80,9 +80,10 @@ export const portfolio = (storage) => {
                     //gg(imgID).src = piece.gif;
                     gg(imgID).style.display = "none";
                     gg(gifID).style.display = "inline";
+                    console.log(piece.gif)
     
-                    const pathReference = ref(storage, `${piece.id}.mpg`);
-                    gg("vid-src-"+piece.id).src = pathReference;
+                    //onst pathReference = ref(storage, `${piece.id}.mpg`);
+                    //gg("vid-src-"+piece.id).src = pathReference;
     
                 });
     
@@ -113,32 +114,36 @@ export const portfolio = (storage) => {
 
     }
 
-    document.addEventListener('scroll', function(e) {
-        for (let piece of pieces){
-            if (piece.active == true){
-            
-            
-                let current = gg("tile-" + piece.id);
+    if (window.innerWidth < 480){
+
+        document.addEventListener('scroll', function(e) {
+            for (let piece of pieces){
+                if (piece.active == true){
+                
+                
+                    let current = gg("tile-" + piece.id);
 
 
-                let imgID = "tile-img-" + piece.id;
-                let gifID = "tile-gif-" + piece.id;
+                    let imgID = "tile-img-" + piece.id;
+                    let gifID = "tile-gif-" + piece.id;
 
-                if (isInViewport(current)){
-                    
-                    gg(imgID).style.display = "none";
-                    gg(gifID).style.display = "inline";
+                    if (isInViewport(current)){
 
-                    const pathReference = ref(storage, `${piece.id}.mpg`);
-                    gg("vid-src-"+piece.id).src = pathReference;
+                        console.log("in viewport")
+                        
+                        gg(imgID).style.display = "none";
+                        gg(gifID).style.display = "inline";
+                        //const pathReference = ref(storage, `${piece.id}.mpg`);
+                        //gg("vid-src-"+piece.id).src = pathReference;
 
-                } else {
-                    gg(imgID).style.display = "block";
-                    gg(gifID).style.display = "none";
+                    } else {
+                        gg(imgID).style.display = "block";
+                        gg(gifID).style.display = "none";
+                    }
                 }
             }
-        }
-    })
+        })
+    }
 
     return port;
 
