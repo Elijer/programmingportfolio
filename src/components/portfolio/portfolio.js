@@ -38,7 +38,10 @@ export const portfolio = (storage) => {
 
                     <video
                     autoplay muted loop inline
+                    playsinline
+                    preload = "auto"
                     class = "tile-gif"
+                    poster = {piece.url}
                     id = {"tile-gif-" + piece.id}
                     >
                         <source id = {"vid-src-" + piece.id} src = {piece.gif} type="video/mp4" />
@@ -80,8 +83,6 @@ export const portfolio = (storage) => {
                     //gg(imgID).src = piece.gif;
                     gg(imgID).style.display = "none";
                     gg(gifID).style.display = "inline";
-                    console.log(piece.gif)
-    
                     //onst pathReference = ref(storage, `${piece.id}.mpg`);
                     //gg("vid-src-"+piece.id).src = pathReference;
     
@@ -112,37 +113,6 @@ export const portfolio = (storage) => {
 
         }
 
-    }
-
-    if (window.innerWidth < 480){
-
-        document.addEventListener('scroll', function(e) {
-            for (let piece of pieces){
-                if (piece.active == true){
-                
-                
-                    let current = gg("tile-" + piece.id);
-
-
-                    let imgID = "tile-img-" + piece.id;
-                    let gifID = "tile-gif-" + piece.id;
-
-                    if (isInViewport(current)){
-
-                        console.log("in viewport")
-                        
-                        gg(imgID).style.display = "none";
-                        gg(gifID).style.display = "inline";
-                        //const pathReference = ref(storage, `${piece.id}.mpg`);
-                        //gg("vid-src-"+piece.id).src = pathReference;
-
-                    } else {
-                        gg(imgID).style.display = "block";
-                        gg(gifID).style.display = "none";
-                    }
-                }
-            }
-        })
     }
 
     return port;
