@@ -2,10 +2,10 @@
 
 export var pieces = [
     {   
-        active: false,
+        active: true,
         url: require("/../media/images/commerce1.png"),
         //url: require("../../../media/commerce2.png"),
-        gif: require("/../media/gifs/auctions1.gif"),
+        gif: require("/../media/h264/auctions.mp4"),
         title: "Auctions",
         id: "auctions",
         description: "Ebay-like bidding platform with images and login system",
@@ -13,9 +13,9 @@ export var pieces = [
         link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
     },
     {
-        active: false,
+        active: true,
         url: require("../../../media/images/codingwiki1.png"),
-        gif: require("../../../media/gifs/wiki1.gif"),
+        gif: require("../../../media/h264/wiki.mp4"),
         title: "Wiki",
         id: "wiki",
         description: "Custom wiki I use to keep and share all my programming notes.",
@@ -43,9 +43,9 @@ export var pieces = [
         link: "https://invisibleplanetnine.web.app/"
     },
     {
-        active: false,
+        active: true,
         url: require("../../../media/images/wesume1.png"),
-        gif: require("../../../media/gifs/wesume1.gif"),
+        gif: require("../../../media/h264/wesume.mp4"),
         title: "Resume",
         id: "resume",
         description: "My online resume with filterable experience entries.",
@@ -53,9 +53,9 @@ export var pieces = [
         link: "https://elijahresume.com/"
     },
     {
-        active: false,
+        active: true,
         url: require("../../../media/images/gyst1.png"),
-        gif: require("../../../media/gifs/gyst1.gif"),
+        gif: require("../../../media/h264/gyst.mp4"),
         title: "Playgyst.com",
         id: "gyst",
         description: "Two-player game similar to tic-tac-toe. Play it with a friend!",
@@ -63,9 +63,9 @@ export var pieces = [
         link: "https://playgyst.com/"
     },
     {
-        active: false,
+        active: true,
         url: require("../../../media/images/cafe1.png"),
-        gif: require("../../../media/gifs/cafe1.gif"),
+        gif: require("../../../media/h264/cafe.mp4"),
         title: "Cafe Infinite",
         id: "cafe",
         description: "Social exploration web app built on top of google maps.",
@@ -73,9 +73,9 @@ export var pieces = [
         link: "https://cafe-infinite.web.app/"
     },
     {
-        active: false,
+        active: true,
         url: require("../../../media/images/rapid1.png"),
-        gif: require("../../../media/gifs/rapid1.gif"),
+        gif: require("../../../media/h264/rapid.mp4"),
         title: "Rapid Notes",
         id: "rapid",
         description: "A text editor I built from scratch that makes note-taking faster and more fun.",
@@ -83,9 +83,9 @@ export var pieces = [
         link: "https://portsite.web.app/editor/editor.html"
     },
     {
-        active: false,
+        active: true,
         url: require("../../../media/images/firestripe1.png"),
-        gif: require("../../../media/gifs/firestripe1.gif"),
+        gif: require("../../../media/h264/firestripe.mp4"),
         title: "Firestripe",
         id: "firestripe",
         description: "Example site that can fully process real credit card payments.",

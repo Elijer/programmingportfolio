@@ -37,10 +37,11 @@ export const portfolio = () => {
                     src = {piece.url} >
                     </img>
 
-                    <video
+                    <video autoplay muted
+                    loop inline
                     class = "tile-gif"
                     id = {"tile-gif-" + piece.id}
-                    loop muted inline>
+                    >
                         <source src = {piece.gif} type="video/mp4" />
                     </video>
 
@@ -77,7 +78,7 @@ export const portfolio = () => {
                 //gg(imgID).src = piece.gif;
                 gg(imgID).style.display = "none";
                 gg(gifID).style.display = "inline";
-                gg(gifID).play();
+                //gg(gifID).play();
 
             });
 
@@ -86,7 +87,7 @@ export const portfolio = () => {
                 //g(imgID).src = piece.url;
                 gg(imgID).style.display = "block";
                 gg(gifID).style.display = "none";
-                gg(gifID).pause();
+                //gg(gifID).pause();
             });
 
             // Add the tile to the portfolio container
