@@ -1,9 +1,9 @@
-const base_url = "/../media/commerce2.png"
+//const base_url = "/../media/commerce2.png"
 
 export var pieces = [
     {   
         active: true,
-        url: require("/../media/commerce2.png"),
+        url: require("/../media/images/commerce1.png"),
         //url: require("../../../media/commerce2.png"),
         gif: require("/../media/gifs/auctions1.gif"),
         title: "Auctions",
@@ -14,7 +14,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/codingwiki1.png"),
+        url: require("../../../media/images/codingwiki1.png"),
         gif: require("../../../media/gifs/wiki1.gif"),
         title: "Wiki",
         id: "wiki",
@@ -24,7 +24,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/bodega3.png"),
+        url: require("../../../media/images/bodega1.png"),
         gif: require("../../../media/gifs/bodega1.gif"),
         title: "Bodega.Photo",
         id: "bodega",
@@ -34,8 +34,8 @@ export var pieces = [
     },
     {
         active: false,
-        url: require("../../../media/jinjialin3.png"),
-        gif: require("../../../media/jinjialin3.png"),
+        url: require("../../../media/images/jinjialin1.png"),
+        gif: require("../../../media/images/jinjialin1.png"),
         title: "Jinjialin",
         id: "jinjialin",
         description: "Fun informational site about a fictional planet, with incorporated chat and twitter.",
@@ -44,7 +44,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/wesume1.png"),
+        url: require("../../../media/images/wesume1.png"),
         gif: require("../../../media/gifs/wesume1.gif"),
         title: "Resume",
         id: "resume",
@@ -54,7 +54,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/gyst6.png"),
+        url: require("../../../media/images/gyst1.png"),
         gif: require("../../../media/gifs/gyst1.gif"),
         title: "Playgyst.com",
         id: "gyst",
@@ -64,7 +64,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/cafe4.png"),
+        url: require("../../../media/images/cafe1.png"),
         gif: require("../../../media/gifs/cafe1.gif"),
         title: "Cafe Infinite",
         id: "cafe",
@@ -74,7 +74,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/rapid1.png"),
+        url: require("../../../media/images/rapid1.png"),
         gif: require("../../../media/gifs/rapid1.gif"),
         title: "Rapid Notes",
         id: "rapid",
@@ -84,7 +84,7 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/firestripe1.png"),
+        url: require("../../../media/images/firestripe1.png"),
         gif: require("../../../media/gifs/firestripe1.gif"),
         title: "Firestripe",
         id: "firestripe",

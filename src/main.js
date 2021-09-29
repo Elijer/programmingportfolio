@@ -11,5 +11,5 @@ import { about } from './components/about/about';
   
 banner();
 portfolio();
-stack();
+//stack();
 //about();
