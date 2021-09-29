@@ -34,4 +34,4 @@ banner();
 portfolio(storage);
 //stack();
 //about();
-scroll()
+//scroll()

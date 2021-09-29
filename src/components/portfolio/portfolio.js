@@ -6,7 +6,7 @@ import { createElement, append } from '/utility/jsx'
 
 import { getStorage, ref } from "firebase/storage";
 
-import { gg } from '/utility/helpers'
+import { gg, isInViewport } from '/utility/helpers'
 import { pieces } from './data.js'
 
 /* This is another way to import images with parcel
@@ -17,9 +17,6 @@ export const portfolio = (storage) => {
     // 1) Create container to put portfolio in
     var port = <div id = "port" ></div>;
     append(port);
-    
-    
-    // 1.1) Description container
 
 
     // 2) Create a tile element for each portfolio piece in 'pieces' array
@@ -115,6 +112,33 @@ export const portfolio = (storage) => {
         }
 
     }
+
+    document.addEventListener('scroll', function(e) {
+        for (let piece of pieces){
+            if (piece.active == true){
+            
+            
+                let current = gg("tile-" + piece.id);
+
+
+                let imgID = "tile-img-" + piece.id;
+                let gifID = "tile-gif-" + piece.id;
+
+                if (isInViewport(current)){
+                    
+                    gg(imgID).style.display = "none";
+                    gg(gifID).style.display = "inline";
+
+                    const pathReference = ref(storage, `${piece.id}.mpg`);
+                    gg("vid-src-"+piece.id).src = pathReference;
+
+                } else {
+                    gg(imgID).style.display = "block";
+                    gg(gifID).style.display = "none";
+                }
+            }
+        }
+    })
 
     return port;
 
