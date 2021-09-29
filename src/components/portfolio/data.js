@@ -2,7 +2,7 @@
 
 export var pieces = [
     {   
-        active: true,
+        active: false,
         url: require("/../media/images/commerce1.png"),
         //url: require("../../../media/commerce2.png"),
         gif: require("/../media/gifs/auctions1.gif"),
@@ -13,7 +13,7 @@ export var pieces = [
         link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
     },
     {
-        active: true,
+        active: false,
         url: require("../../../media/images/codingwiki1.png"),
         gif: require("../../../media/gifs/wiki1.gif"),
         title: "Wiki",
@@ -25,7 +25,7 @@ export var pieces = [
     {
         active: true,
         url: require("../../../media/images/bodega1.png"),
-        gif: require("../../../media/gifs/bodega1.gif"),
+        gif: require("../../../media/h264/bodega.mp4"),
         title: "Bodega.Photo",
         id: "bodega",
         description: "Grab color samples out of uploaded photos.",
@@ -43,7 +43,7 @@ export var pieces = [
         link: "https://invisibleplanetnine.web.app/"
     },
     {
-        active: true,
+        active: false,
         url: require("../../../media/images/wesume1.png"),
         gif: require("../../../media/gifs/wesume1.gif"),
         title: "Resume",
@@ -53,7 +53,7 @@ export var pieces = [
         link: "https://elijahresume.com/"
     },
     {
-        active: true,
+        active: false,
         url: require("../../../media/images/gyst1.png"),
         gif: require("../../../media/gifs/gyst1.gif"),
         title: "Playgyst.com",
@@ -63,7 +63,7 @@ export var pieces = [
         link: "https://playgyst.com/"
     },
     {
-        active: true,
+        active: false,
         url: require("../../../media/images/cafe1.png"),
         gif: require("../../../media/gifs/cafe1.gif"),
         title: "Cafe Infinite",
@@ -73,7 +73,7 @@ export var pieces = [
         link: "https://cafe-infinite.web.app/"
     },
     {
-        active: true,
+        active: false,
         url: require("../../../media/images/rapid1.png"),
         gif: require("../../../media/gifs/rapid1.gif"),
         title: "Rapid Notes",
@@ -83,7 +83,7 @@ export var pieces = [
         link: "https://portsite.web.app/editor/editor.html"
     },
     {
-        active: true,
+        active: false,
         url: require("../../../media/images/firestripe1.png"),
         gif: require("../../../media/gifs/firestripe1.gif"),
         title: "Firestripe",

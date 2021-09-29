@@ -55,12 +55,16 @@
         }
     }
 
-    .tile-img {
+    .tile-img, .tile-gif {
         opacity: $tile-fade;
         object-fit: cover;
         width: 100%;
         //height: 200px;
         height: 140px;
+    }
+
+    .tile-gif {
+        display: none;
     }
 
 }
