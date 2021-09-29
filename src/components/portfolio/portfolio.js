@@ -4,13 +4,15 @@ import { createElement, append } from '/utility/jsx'
 
 // ------ ABOVE THIS LINE IS MANDATORY FOR ALL FILES USING JSX ---------
 
+import { getStorage, ref } from "firebase/storage";
+
 import { gg } from '/utility/helpers'
 import { pieces } from './data.js'
 
 /* This is another way to import images with parcel
 import commerce1 from "../../media/commerce1.png"; */
 
-export const portfolio = () => {
+export const portfolio = (storage) => {
 
     // 1) Create container to put portfolio in
     var port = <div id = "port" ></div>;
@@ -42,7 +44,7 @@ export const portfolio = () => {
                     class = "tile-gif"
                     id = {"tile-gif-" + piece.id}
                     >
-                        <source src = {piece.gif} type="video/mp4" />
+                        <source id = {"vid-src-" + piece.id} src = {piece.gif} type="video/mp4" />
                     </video>
 
                     <div class = "tile-body">
@@ -78,7 +80,9 @@ export const portfolio = () => {
                 //gg(imgID).src = piece.gif;
                 gg(imgID).style.display = "none";
                 gg(gifID).style.display = "inline";
-                //gg(gifID).play();
+
+                const pathReference = ref(storage, `${piece.id}.mpg`);
+                gg("vid-src-"+piece.id).src = pathReference;
 
             });
 
@@ -87,6 +91,7 @@ export const portfolio = () => {
                 //g(imgID).src = piece.url;
                 gg(imgID).style.display = "block";
                 gg(gifID).style.display = "none";
+                
                 //gg(gifID).pause();
             });
 
