@@ -75,25 +75,29 @@ export const portfolio = (storage) => {
             let imgID = "tile-img-" + piece.id;
             let gifID = "tile-gif-" + piece.id;
 
-            tile.addEventListener("mouseenter",
-            () => {
-                //gg(imgID).src = piece.gif;
-                gg(imgID).style.display = "none";
-                gg(gifID).style.display = "inline";
 
-                const pathReference = ref(storage, `${piece.id}.mpg`);
-                gg("vid-src-"+piece.id).src = pathReference;
-
-            });
-
-            tile.addEventListener("mouseleave",
-            () => {
-                //g(imgID).src = piece.url;
-                gg(imgID).style.display = "block";
-                gg(gifID).style.display = "none";
-                
-                //gg(gifID).pause();
-            });
+            // Only play mp4s on hover for desktop. We'll do it differently for mobile.
+            if (window.innerWidth > 480){
+                tile.addEventListener("mouseenter",
+                () => {
+                    //gg(imgID).src = piece.gif;
+                    gg(imgID).style.display = "none";
+                    gg(gifID).style.display = "inline";
+    
+                    const pathReference = ref(storage, `${piece.id}.mpg`);
+                    gg("vid-src-"+piece.id).src = pathReference;
+    
+                });
+    
+                tile.addEventListener("mouseleave",
+                () => {
+                    //g(imgID).src = piece.url;
+                    gg(imgID).style.display = "block";
+                    gg(gifID).style.display = "none";
+                    
+                    //gg(gifID).pause();
+                });
+            }
 
             // Add the tile to the portfolio container
             document.getElementById("port").appendChild(tile);

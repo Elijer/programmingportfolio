@@ -28,8 +28,10 @@ import { banner } from '/components/banner/banner'
 import { portfolio } from './components/portfolio/portfolio'
 import { stack } from './components/stack/stack'
 import { about } from './components/about/about';
+import { scroll } from './components/scroll/scroll';
   
 banner();
 portfolio(storage);
 //stack();
 //about();
+scroll()
