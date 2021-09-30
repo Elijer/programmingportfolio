@@ -33,5 +33,5 @@ import { scroll } from './components/scroll/scroll';
 banner();
 portfolio(storage);
 //stack();
-//about();
+about();
 //scroll()
