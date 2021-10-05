@@ -10,7 +10,7 @@ export var pieces = [
         id: "auctions",
         description: "Ebay-like bidding platform with images and login system",
         stack: ["Django", "Sass", "MYSQL"],
-        link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
+        link: "http://157.230.2.209:8001"
     },
     {
         active: true,
