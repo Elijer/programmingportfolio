@@ -20,7 +20,7 @@ export var pieces = [
         id: "wiki",
         description: "Custom wiki I use to keep and share all my programming notes.",
         stack: ["Django", "MYSQL", "Sass"],
-        link: "https://www.google.com/search?q=moose&oq=moose&aqs=chrome.0.35i39l2j46i131i433i512j69i60l5.446j0j1&sourceid=chrome&ie=UTF-8"
+        link: "http://157.230.2.209:8000/"
     },
     {
         active: true,
