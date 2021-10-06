@@ -19,10 +19,29 @@
         }
     }
 
-    img {
+    #desktop-img {
         //border-radius: 50%;
         overflow: hidden;
         //padding: 100px;
         width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        display: none;
+
+        #desktop-image {
+            display: none;
+        }
+
+        #content {
+            margin-top: 50px;
+        }
+
+        #mobile-image {
+            border-radius: 50%;
+            display: block;
+        }
     }
 }

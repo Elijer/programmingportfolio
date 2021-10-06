@@ -12,11 +12,12 @@ export const about = () => {
     // 1) Create a container for the stack descripton
     let about =
     <div id = "about">
+        <img id = "mobile-img" src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg" width = "300px"></img>
         <div id = "content">
             <h1> About Me </h1>
             <p> Hi, I am a web designer based in Memphis. I would describe myself as midfield. I can set up databses, write and consume APIS, and build web apps, write and consume REST API's, and build web apps in Python or Javascript. Literally or technologically, I enjoy running all over the place.</p>
         </div>
-        <img src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg"></img>
+        <img id = "desktop-image" src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg"></img>
     </div>
 
     document.getElementById("root").appendChild(about)
@@ -29,18 +30,29 @@ export const about = () => {
     let title = gg("site-title")
     let port = gg("port");
 
-    title.addEventListener("click", ()=> {
-
-        console.log("test");
-
-        if (!bio){
-            bio = true;
-            port.style.display = "none";
-            about.style.display = "grid";
-        } else if (bio) {
-            bio = false;
-            port.style.display = "grid";
-            about.style.display = "none";
-        }
-    })
+    if (window.innerWidth > 480){
+        title.addEventListener("click", ()=> {
+            if (!bio){
+                bio = true;
+                port.style.display = "none";
+                about.style.display = "grid";
+            } else if (bio) {
+                bio = false;
+                port.style.display = "grid";
+                about.style.display = "none";
+            }
+        })
+    } else {
+        title.addEventListener("click", ()=> {
+            if (!bio){
+                bio = true;
+                port.style.display = "none";
+                about.style.display = "block";
+            } else if (bio) {
+                bio = false;
+                port.style.display = "block";
+                about.style.display = "none";
+            }
+        })
+    }
 }
