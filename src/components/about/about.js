@@ -15,7 +15,7 @@ export const about = () => {
         <img id = "mobile-image" src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg" width = "300px"></img>
         <div id = "content">
             <h1> About Me </h1>
-            <p> Hi, I am a web designer based in Memphis. I would describe myself as midfield. I can set up databses, write and consume APIS, and build web apps, write and consume REST API's, and build web apps in Python or Javascript. Literally or technologically, I enjoy running all over the place.</p>
+            <p> Hi, I am a web developer based in Memphis. I would describe myself as midfield. I can set up databses, write and consume APIS, and build web apps, write and consume REST API's, and build web apps in Python or Javascript. Literally or technologically, I enjoy running all over the place.</p>
         </div>
         <img id = "desktop-image" src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg"></img>
     </div>
