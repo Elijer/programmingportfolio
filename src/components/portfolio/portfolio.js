@@ -55,6 +55,8 @@ export const portfolio = (storage) => {
                             {piece.title}
                         </h1>
 
+                        {/* <i class="fab fa-github"></i> */}
+
                         <div id = {"stack-" + piece.id} class = "tile-stack">
                         </div>
 
