@@ -35,3 +35,7 @@ portfolio(storage);
 //stack();
 about();
 //scroll()
+
+console.log("Hey! Thanks for checking out my site.")
+console.log("I'm currently studying up on React and looking for work.")
+console.log("Drop me a line at elijahclimbs@gmail.com.")
