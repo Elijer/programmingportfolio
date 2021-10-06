@@ -4,12 +4,25 @@
     color: rgb($dark-brown, .7);
     margin-top: 40px;
 
-    h1 {
-        font-size: 50px;
-        border-bottom: 1px solid rgb($dark-brown, .7);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    #content {
+
+        h1 {
+            font-size: 50px;
+            border-bottom: 1px solid rgb($dark-brown, .7);
+        }
+    
+        p {
+            font-size: 30px;
+        }
     }
 
-    p {
-        font-size: 30px;
+    img {
+        //border-radius: 50%;
+        overflow: hidden;
+        //padding: 100px;
+        width: 400px;
     }
 }

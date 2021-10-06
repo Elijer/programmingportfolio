@@ -12,8 +12,11 @@ export const about = () => {
     // 1) Create a container for the stack descripton
     let about =
     <div id = "about">
-        <h1> About Me </h1>
-        <p> Hi, I am a web designer based in Memphis. I would describe myself as midfield. I can set up databses, write and consume APIS, and build web apps., write and consume REST API's, and build web apps in Python or Javascript. Literally or technologically, I enjoy running all over the place.</p>
+        <div id = "content">
+            <h1> About Me </h1>
+            <p> Hi, I am a web designer based in Memphis. I would describe myself as midfield. I can set up databses, write and consume APIS, and build web apps, write and consume REST API's, and build web apps in Python or Javascript. Literally or technologically, I enjoy running all over the place.</p>
+        </div>
+        <img src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg"></img>
     </div>
 
     document.getElementById("root").appendChild(about)
@@ -26,10 +29,6 @@ export const about = () => {
     let title = gg("site-title")
     let port = gg("port");
 
-    let display = gg("tech-description-display");
-    let desc = gg("tech-description-description");
-    let name = gg("tech-description-name");
-
     title.addEventListener("click", ()=> {
 
         console.log("test");
@@ -37,23 +36,11 @@ export const about = () => {
         if (!bio){
             bio = true;
             port.style.display = "none";
-            about.style.display = "block";
+            about.style.display = "grid";
         } else if (bio) {
             bio = false;
             port.style.display = "grid";
             about.style.display = "none";
         }
     })
-
-/*     title.addEventListener("mouseenter", () => {
-        display.style.display = "block";
-        name.innerHTML = "About Me";
-        desc.innerHTML = aboutContent;
-        port.style.display = "none";
-    }) */
-
-/*     title.addEventListener("mouseleave", () => {
-        display.style.display = "none";
-        port.style.display = "grid";
-    }) */
 }
