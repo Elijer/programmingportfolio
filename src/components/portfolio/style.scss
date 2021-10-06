@@ -19,7 +19,7 @@
 
     .tile-body {
         padding: 0px 20px 10px;
-        margin-top: 0px;
+        //margin-top: 0px;
         color: rgb($dark-brown, 0.8);
 
         .tile-title {
@@ -34,10 +34,13 @@
             margin-bottom: 10px;
             padding-bottom: 6px;
             border-bottom: 1px solid rgb($brown, .2);
+            display: flex;
+            flex-wrap: wrap;
 
             .stack-item {
+                white-space: nowrap;
                 padding: 0px 5px;
-                font-size: 12px;
+                font-size: 14px;
                 display: inline;
                 margin-right: 3px;
                 background: rgb($brown, .2);
@@ -55,16 +58,17 @@
         }
     }
 
+
+    .tile-gif {
+        display: none;
+    }
+
     .tile-img, .tile-gif {
         opacity: $tile-fade;
         object-fit: cover;
         width: 100%;
         //height: 200px;
         height: 140px;
-    }
-
-    .tile-gif {
-        display: none;
     }
 
 }

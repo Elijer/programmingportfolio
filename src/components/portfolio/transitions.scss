@@ -8,25 +8,38 @@
 
     transition: margin .6s;
 
+    .tile-body {
+        .tile-stack {
+            .stack-item {
+                &:hover {
+                    background: purple;
+                    }
+                }
+        }
+    }
+
     &:hover {
         background: rgb(163, 138, 138);
-        box-shadow: none;
+        box-shadow: $placeholder-shadow;
         transition: background .6s;
         //margin: 0px;
         transition: margin .6s;
+        transition: background .4s;
+        transition: height .5s;
 
         .tile-img {
             opacity: 100%;
             //height: 80%;
             //width: 105%;
+            transition: height .5s;
             transition: width 1s;
         }
 
         h1.tile-title {
             color: white;
-            text-shadow: 3px 3px $purple;
-            font-style: italic;
-            letter-spacing: 3px;
+            //text-shadow: 3px 3px $purple;
+            //font-style: italic;
+            //letter-spacing: 3px;
         }
 
         /*  Border on Higlight

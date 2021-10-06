@@ -9,7 +9,7 @@ export var pieces = [
         title: "Auctions",
         id: "auctions",
         description: "Ebay-like bidding platform with images and login system",
-        stack: ["Django", "Sass", "MYSQL"],
+        stack: ["Django", "Sass", "SQLite", "Bootstrap", "CSS Grid"],
         link: "http://157.230.2.209:8001"
     },
     {
@@ -29,7 +29,7 @@ export var pieces = [
         title: "Bodega.Photo",
         id: "bodega",
         description: "Grab color samples out of uploaded photos.",
-        stack: ["Javascript", "NPM"],
+        stack: ["Javascript", "NPM", "CSS Flexbox"],
         link: "https://bodega.photo/"
     },
     {
@@ -49,7 +49,7 @@ export var pieces = [
         title: "Resume",
         id: "resume",
         description: "My online resume with filterable experience entries.",
-        stack: ["Javascript", "Sass"],
+        stack: ["Javascript", "Sass", "CSS Transitions", "Mobile First"],
         link: "https://elijahresume.com/"
     },
     {
@@ -59,7 +59,7 @@ export var pieces = [
         title: "Playgyst.com",
         id: "gyst",
         description: "Two-player game similar to tic-tac-toe. Play it with a friend!",
-        stack: ["Firebase", "Sass"],
+        stack: ["Firebase", "Sass", "Realtime DB", "Firestore", "Mobile First"],
         link: "https://playgyst.com/"
     },
     {
@@ -69,7 +69,7 @@ export var pieces = [
         title: "Cafe Infinite",
         id: "cafe",
         description: "Social exploration web app built on top of google maps.",
-        stack: ["Firebase", "Google Maps API", "Geolocation"],
+        stack: ["Firebase", "Google Maps", "Geolocation", "Webpack", "Gulp"],
         link: "https://cafe-infinite.web.app/"
     },
     {
