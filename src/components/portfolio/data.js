@@ -1,22 +1,39 @@
 //const base_url = "/../media/commerce2.png"
 
+const root = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/"
+
+const vids = root + "mp4/"
+const pics = root + "png/"
+const vidExt = ".mp4"
+const picExt = ".png"
+
+function makeUrl(id, type){
+    if (type === "pic"){
+        return pics + id + picExt
+    } else {
+        return vids + id + vidExt
+    }
+}
+
 export var pieces = [
     {   
         active: true,
-        url: require("/../media/images/commerce1.png"),
-        //url: require("../../../media/commerce2.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/auctions.mp4",
+        url: makeUrl("auctions", "pic"),
+        gif: makeUrl("auctions", "vid"),
         title: "Auctions",
         id: "auctions",
         description: "Ebay-like bidding platform with images and login system",
         stack: ["Django", "Sass", "SQLite", "Bootstrap", "CSS Grid"],
-        link: "http://157.230.2.209:8001"
+        link: "http://157.230.2.209:8001",
+        getID(){
+            return this.id;
+        }
     },
     {
         active: true,
-        url: require("../../../media/images/codingwiki1.png"),
+        url: makeUrl("wiki", "pic"),
+        gif: makeUrl("wiki", "vid"),
         title: "Wiki",
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/wiki.mp4",
         id: "wiki",
         description: "Custom wiki I use to keep and share all my programming notes.",
         stack: ["Django", "MYSQL", "Sass"],
@@ -24,8 +41,8 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/images/bodega1.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bodega.mp4",
+        url: makeUrl("bodega", "pic"),
+        gif: makeUrl("bodega", "vid"),
         title: "Bodega.Photo",
         id: "bodega",
         description: "Grab color samples out of uploaded photos.",
@@ -34,8 +51,8 @@ export var pieces = [
     },
     {
         active: false,
-        url: require("../../../media/images/jinjialin1.png"),
-        gif: require("../../../media/images/jinjialin1.png"),
+        url: makeUrl("jinjialin", "pic"),
+        gif: makeUrl("jinjialin", "vid"),
         title: "Jinjialin",
         id: "jinjialin",
         description: "Fun informational site about a fictional planet, with incorporated chat and twitter.",
@@ -44,8 +61,8 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/images/wesume1.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/wesume.mp4",
+        url: makeUrl("wesume", "pic"),
+        gif: makeUrl("wesume", "vid"),
         title: "Resume",
         id: "resume",
         description: "My online resume with filterable experience entries.",
@@ -54,8 +71,8 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/images/gyst1.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/gyst.mp4",
+        url: makeUrl("gyst", "pic"),
+        gif: makeUrl("gyst", "vid"),
         title: "Playgyst.com",
         id: "gyst",
         description: "Two-player game similar to tic-tac-toe. Play it with a friend!",
@@ -64,8 +81,8 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/images/cafe1.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/cafe.mp4",
+        url: makeUrl("cafe", "pic"),
+        gif: makeUrl("cafe", "vid"),
         title: "Cafe Infinite",
         id: "cafe",
         description: "Social exploration web app built on top of google maps.",
@@ -74,8 +91,8 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/images/rapid1.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/rapid.mp4",
+        url: makeUrl("rapid", "pic"),
+        gif: makeUrl("rapid", "vid"),
         title: "Rapid Notes",
         id: "rapid",
         description: "A text editor I built from scratch that makes note-taking faster and more fun.",
@@ -84,8 +101,8 @@ export var pieces = [
     },
     {
         active: true,
-        url: require("../../../media/images/firestripe1.png"),
-        gif: "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/firestripe.mp4",
+        url: makeUrl("stripe", "pic"),
+        gif: makeUrl("stripe", "vid"),
         title: "Firestripe",
         id: "firestripe",
         description: "Example site that can fully process real credit card payments.",
