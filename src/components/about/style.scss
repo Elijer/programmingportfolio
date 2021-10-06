@@ -19,11 +19,15 @@
         }
     }
 
-    #desktop-img {
+    #desktop-image {
         //border-radius: 50%;
         overflow: hidden;
         //padding: 100px;
         width: 400px;
+    }
+
+    #mobile-image {
+        display: none;
     }
 }
 
