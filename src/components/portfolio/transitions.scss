@@ -8,15 +8,17 @@
 
     transition: margin .6s;
 
-    .tile-body {
+    // Hover behavior for stack-items
+/*     .tile-body {
         .tile-stack {
             .stack-item {
                 &:hover {
-                    background: purple;
+                    background: $purple;
+                    color: $more-transparent;
                     }
                 }
         }
-    }
+    } */
 
     &:hover {
         background: rgb(163, 138, 138);
@@ -26,6 +28,14 @@
         transition: margin .6s;
         transition: background .4s;
         transition: height .5s;
+
+        .tile-body {
+            .tile-stack {
+                .stack-item {
+                    background: $more-transparent;
+                }
+            }
+        }
 
         .tile-img {
             opacity: 100%;

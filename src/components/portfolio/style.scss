@@ -1,5 +1,7 @@
 @import "./transitions";
 
+// Resizing on hover issue is probably because the videos and pictures are simply different sizes.
+// I thought that the overflow: hidden property fixed this, but not quite
 
 #port {
     display: grid;
@@ -40,8 +42,9 @@
             .stack-item {
                 white-space: nowrap;
                 padding: 0px 5px;
-                font-size: 14px;
+                font-size: 16px;
                 display: inline;
+                margin-top: 5px;
                 margin-right: 3px;
                 background: rgb($brown, .2);
                 border-radius: $rounded;
@@ -58,17 +61,16 @@
         }
     }
 
-
-    .tile-gif {
-        display: none;
-    }
-
     .tile-img, .tile-gif {
         opacity: $tile-fade;
         object-fit: cover;
         width: 100%;
         //height: 200px;
         height: 140px;
+    }
+
+    .tile-gif {
+        display: none;
     }
 
 }
