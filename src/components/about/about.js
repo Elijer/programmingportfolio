@@ -39,12 +39,10 @@ export const about = () => {
                 bio = true;
                 port.style.display = "none";
                 about.style.display = "grid";
-                desktop.style.display = "none";
             } else if (bio) {
                 bio = false;
                 port.style.display = "grid";
                 about.style.display = "none";
-                desktop.style.display = "block";
             }
         })
     } else {
