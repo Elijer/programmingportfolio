@@ -35,7 +35,7 @@ banner();
 portfolio(storage);
 //stack();
 about();
-textbox();
+//textbox();
 //scroll()
 
 console.log("Hey! Thanks for checking out my site.")
