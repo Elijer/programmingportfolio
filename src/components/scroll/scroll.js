@@ -1,6 +1,8 @@
 import { pieces } from '/components/portfolio/data.js'
 import { gg, isInViewport } from '/utility/helpers'
 
+// This mobile-only component attempts to play the gif of a video if it is in the center of the screen.
+
 export const scroll = () => {
     if (window.innerWidth < 480){
 

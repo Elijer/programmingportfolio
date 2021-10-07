@@ -29,11 +29,13 @@ import { portfolio } from './components/portfolio/portfolio'
 import { stack } from './components/stack/stack'
 import { about } from './components/about/about'
 import { scroll } from './components/scroll/scroll';
+import { textbox } from './components/textbox/textbox';
   
 banner();
 portfolio(storage);
 //stack();
 about();
+textbox();
 //scroll()
 
 console.log("Hey! Thanks for checking out my site.")
