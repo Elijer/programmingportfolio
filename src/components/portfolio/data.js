@@ -16,6 +16,16 @@ function makeUrl(id, type){
 }
 
 export var pieces = [
+    {
+        active: true,
+        url: makeUrl("wesume", "pic"),
+        gif: makeUrl("wesume", "vid"),
+        title: "Resume",
+        id: "resume",
+        description: "My online resume with filterable experience entries.",
+        stack: ["Javascript", "Sass", "CSS Transitions", "Mobile First"],
+        link: "https://elijahresume.com/"
+    },
     {   
         active: true,
         url: makeUrl("auctions", "pic"),
@@ -58,16 +68,6 @@ export var pieces = [
         description: "Fun informational site about a fictional planet, with incorporated chat and twitter.",
         stack: ["Javascript", "NPM"],
         link: "https://invisibleplanetnine.web.app/"
-    },
-    {
-        active: true,
-        url: makeUrl("wesume", "pic"),
-        gif: makeUrl("wesume", "vid"),
-        title: "Resume",
-        id: "resume",
-        description: "My online resume with filterable experience entries.",
-        stack: ["Javascript", "Sass", "CSS Transitions", "Mobile First"],
-        link: "https://elijahresume.com/"
     },
     {
         active: true,
