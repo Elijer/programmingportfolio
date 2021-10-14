@@ -100,7 +100,7 @@ export var pieces = [
         link: "https://portsite.web.app/editor/editor.html"
     },
     {
-        active: true,
+        active: false,
         url: makeUrl("stripe", "pic"),
         gif: makeUrl("stripe", "vid"),
         title: "Firestripe",
