@@ -16,7 +16,7 @@ export const about = () => {
         <div id = "content">
             <h1> About Me </h1>
             <p> I'm a web developer based in Memphis. I can build web apps in Python or Javascript, write and consume APIS, and set up databases. I'm most proficient with the front end, but I (literally and technologically) enjoy running all over the place.</p>
-            <p> Get in touch at elijahclimbs@gmail.com </p>
+            <p> Get in touch at elijahclimbs@gmail.com. </p>
         </div>
         <img id = "desktop-image" src = "https://portfoliosite-h264.s3.us-east-2.amazonaws.com/bio2.jpg"></img>
     </div>
