@@ -24,7 +24,7 @@ export var pieces = [
         id: "auctions",
         description: "Ebay-like bidding platform with images and login system",
         stack: ["Django", "Sass", "SQLite", "Bootstrap", "CSS Grid"],
-        link: "http://157.230.2.209:8001",
+        link: "http://157.230.2.209:8001/test",
         getID(){
             return this.id;
         }
