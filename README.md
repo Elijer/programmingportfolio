@@ -7,7 +7,7 @@ Nothing happens, because the same element is being appended over again!
 I guess? Seems weird. I don't totally understand, but I'm glad it works.
 
 # Notes
-There a couple things I could still add:
+There are couple things I could still add:
 1. The project I created for katie, (include Twilio usage)
 2. The work I put into Str8hmp.com (include Liquid and shopify)
 3. Network, when I'm done.
