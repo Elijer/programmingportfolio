@@ -18,6 +18,7 @@ function makeUrl(id, type){
 export var pieces = [
     {
         active: true,
+        mobile: true,
         url: makeUrl("wesume", "pic"),
         gif: makeUrl("wesume", "vid"),
         title: "Resume",
@@ -28,6 +29,7 @@ export var pieces = [
     },
     {   
         active: true,
+        mobile: false,
         url: makeUrl("auctions", "pic"),
         gif: makeUrl("auctions", "vid"),
         title: "Auctions",
@@ -41,6 +43,7 @@ export var pieces = [
     },
     {
         active: true,
+        mobile: true,
         url: makeUrl("wiki", "pic"),
         gif: makeUrl("wiki", "vid"),
         title: "Wiki",
@@ -51,6 +54,7 @@ export var pieces = [
     },
     {
         active: true,
+        mobile: true,
         url: makeUrl("bodega", "pic"),
         gif: makeUrl("bodega", "vid"),
         title: "Bodega.Photo",
@@ -71,6 +75,7 @@ export var pieces = [
     },
     {
         active: true,
+        mobile: true,
         url: makeUrl("gyst", "pic"),
         gif: makeUrl("gyst", "vid"),
         title: "Playgyst.com",
@@ -81,6 +86,7 @@ export var pieces = [
     },
     {
         active: true,
+        mobile: false,
         url: makeUrl("cafe", "pic"),
         gif: makeUrl("cafe", "vid"),
         title: "Cafe Infinite",
@@ -91,6 +97,7 @@ export var pieces = [
     },
     {
         active: true,
+        mobile: false,
         url: makeUrl("rapid", "pic"),
         gif: makeUrl("rapid", "vid"),
         title: "Rapid Notes",
