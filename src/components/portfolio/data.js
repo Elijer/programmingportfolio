@@ -23,7 +23,7 @@ export var pieces = [
         gif: makeUrl("moonbot", "vid"),
         title: "Moonbot",
         id: "moonbot",
-        description: "An customizeable personal data tracker designed to analyze trends in period cycles.",
+        description: "A customizeable, personal data tracker designed to analyze trends in period cycles.",
         stack: ["React", "Django", "Docker", "Mobile First", "Recharts.js", "JWT Auth", "Django Rest API"],
         link: "http://moonbot.me"
     },

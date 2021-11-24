@@ -126,7 +126,7 @@ export const portfolio = (storage) => {
 
     if (window.innerWidth < 480){
         var mobileMsg = <div id = "mobile-msg">
-            <p> Only displaying mobile-first projects. To see more projects, view this site on desktop.</p>
+            <p> Only displaying mobile-friendly projects. To see more projects, view this site on desktop.</p>
         </div>;
 
         append(mobileMsg, "port");
