@@ -72,7 +72,7 @@ export var pieces = [
         id: "bodega",
         description: "Grab color samples out of uploaded photos.",
         stack: ["Javascript", "NPM", "CSS Flexbox"],
-        link: "https://bodega.photo/"
+        link: "https://bodegaphoto.web.app/"
     },
     {
         active: false,
